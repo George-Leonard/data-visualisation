@@ -17,11 +17,15 @@ def ping_add(address):
     times = row[11].split("=")
     ms = times[1]
 
-    date = strftime("%Y-%m-%d %H:%M:%S".format(gmtime()))
+    date = strftime("%Y-%m-%d,%H:%M:%S".format(gmtime()))
+    
     print(date)
 
+    time = date.split(',')
+    time = time[1]
+    
     file = open("PINGINFO.txt", "a")
-    file.write(str(date)+","+str(ms)+"\n")
+    file.write(str(time)+","+str(ms)+"\n")
 
         
 while True:
@@ -30,5 +34,3 @@ while True:
 
 
     
-
-
