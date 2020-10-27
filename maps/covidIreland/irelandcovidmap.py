@@ -10,7 +10,7 @@ irelandcovid = gpd.read_file("Covid19_LEACases_Mapped-shp/Covid19_LEACases_Mappe
 cases = pd.read_csv("Covid19_LEACases_Mapped.csv")
 
 #pd.set_option('display.max_columns', None)
-
+#print(irelandcovid.head())
 
 cases = irelandcovid['C19_P14_T']
 
