@@ -22,6 +22,8 @@ for i in range(0,len(cases)):
 
 fig = plt.figure()
 ax1 = fig.add_subplot(111)
+fig.suptitle("Covid19 cases around ireland")
+
 
 irelandcovid.plot(ax=ax1,column=cases,cmap='Blues')
 cbar = plt.cm.ScalarMappable(cmap='Blues',
