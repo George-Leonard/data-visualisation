@@ -11,6 +11,7 @@ style.use("ggplot")
 fig = plt.figure()
 ax1 = fig.add_subplot(1,1,1)
 
+fig.suptitle("Ping graph to google.com")
 def animate(i):
 
     xs = []
